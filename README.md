@@ -7,3 +7,11 @@
 2- Infinit Scroll.
 
 - Live View: https://sayedhany.github.io/Front-End-Projects/2-Infinity-Scroll/
+
+3- Picture In Picture.
+
+- Live View: https://sayedhany.github.io/Front-End-Projects/3-Picture-In-Picture/
+
+4- Joke Teller
+
+- Live View: https://sayedhany.github.io/Front-End-Projects/4-Joke-Teller/
