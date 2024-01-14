@@ -15,3 +15,7 @@
 4- Joke Teller
 
 - Live View: https://sayedhany.github.io/Front-End-Projects/4-Joke-Teller/
+
+5- light dark mode
+
+- Live View: https://sayedhany.github.io/Front-End-Projects/5-light-dark-mode/
