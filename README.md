@@ -19,3 +19,7 @@
 5- light dark mode
 
 - Live View: https://sayedhany.github.io/Front-End-Projects/5-light-dark-mode/
+
+6- Animated Template
+
+- Live View: https://sayedhany.github.io/Front-End-Projects/6-animated-template/
