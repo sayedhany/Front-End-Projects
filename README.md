@@ -27,3 +27,7 @@
 7- animated-navigation
 
 - Live View: https://sayedhany.github.io/Front-End-Projects/7-animated-navigation/
+
+8- music-player
+
+- Live View: https://sayedhany.github.io/Front-End-Projects/8-music-player/
