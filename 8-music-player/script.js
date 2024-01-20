@@ -84,7 +84,6 @@ function nextSong() {
   }
   loadSong(songs[songIndex]);
   playSong();
-  console.log(songIndex);
   // loadSong[songs[songIndex++]];
 }
 
@@ -92,7 +91,6 @@ function updateProgressBar(e) {
   if (isPlaying) {
     const { duration, currentTime } = e.srcElement;
     const width = (currentTime / duration) * 100;
-    console.log(Math.trunc(width));
     progress.style.width = `${width}%`;
     const durationMinutes = Math.floor(duration / 60);
     let durationSeconds = Math.floor(duration % 60);
@@ -107,7 +105,6 @@ function updateProgressBar(e) {
     if (currentSeconds < 9) {
       currentSeconds = `0${currentSeconds}`;
     }
-    console.log(currentSeconds, currentMinutes);
     if (currentSeconds) {
       currentTimeElement.textContent = `${currentMinutes}:${currentSeconds}`;
     }
@@ -117,7 +114,6 @@ function setProgressBar(e) {
   const width = e.offsetX / this.clientWidth;
   const { duration } = audio;
   audio.currentTime = width * duration;
-  console.log(width * duration);
 }
 loadSong(songs[songIndex]);
 
