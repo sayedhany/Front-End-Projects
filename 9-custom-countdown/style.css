@@ -1,5 +1,4 @@
-
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -10,7 +9,7 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
-
+  font-family: Oswald, sans-serif;
 }
 
 /* Video Background */
@@ -18,7 +17,8 @@ body {
   position: fixed;
   right: 0;
   bottom: 0;
-
+  width: 100vw;
+  height: auto;
 }
 
 video {
@@ -30,9 +30,8 @@ video {
 
 .video-overlay {
   position: fixed;
-  left: 0;
-  top: 0;
-
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 /* Container */
@@ -46,7 +45,7 @@ video {
   z-index: 2;
   display: flex;
   justify-content: center;
-
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .input-container {
@@ -79,7 +78,7 @@ input {
   border-radius: 20px;
   background: #fff;
   outline: none;
-
+  font-family: inherit;
 }
 
 /* Button */
@@ -95,8 +94,41 @@ button {
   cursor: pointer;
   outline: none;
 }
+button:hover {
+  filter: brightness(110%);
+}
 
-
+.countdown ul {
+  display: flex;
+}
+.countdown ul li {
+  text-align: center;
+}
+.complete-title {
+  animation: complete 4s infinite;
+}
+@keyframes complete {
+  0% {
+    transform: scale(1);
+    color: rgb(233, 13, 13);
+  }
+  25% {
+    transform: scale(1.5);
+    color: rgb(200, 233, 13);
+  }
+  50% {
+    transform: scale(1);
+    color: rgb(57, 233, 13);
+  }
+  75% {
+    transform: scale(1.5);
+    color: rgb(13, 90, 233);
+  }
+  100% {
+    transform: scale(1);
+    color: rgb(233, 13, 178);
+  }
+}
 
 /* Countdown */
 ul {
@@ -104,7 +136,6 @@ ul {
 }
 
 li {
-
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -123,21 +154,23 @@ li span {
   top: 60px;
 }
 
-
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
   .video-background {
-
+    height: 100vh;
+    width: 100vw;
   }
-  
-  video {
 
+  video {
     margin-top: -1px;
+    object-position: 70%;
+    object-fit: cover;
   }
 
   .container {
-
     min-height: 245px;
+    min-width: unset;
+    width: 95vw;
     padding: 20px;
     margin: 10px;
   }
