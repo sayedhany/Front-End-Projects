@@ -39,3 +39,7 @@
 10- book-keeper
 
 - Live View: https://sayedhany.github.io/Front-End-Projects/10-book-keeper/
+
+11- video-player
+
+- Live View: https://sayedhany.github.io/Front-End-Projects/11-video-player/
