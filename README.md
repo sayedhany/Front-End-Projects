@@ -43,3 +43,7 @@
 11- video-player
 
 - Live View: https://sayedhany.github.io/Front-End-Projects/11-video-player/
+
+12- form-validator
+
+- Live View: https://sayedhany.github.io/Front-End-Projects/12-form-validator/
